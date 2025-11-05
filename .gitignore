@@ -1,0 +1,16 @@
+# Arquivos e executáveis gerados de C/C++
+*.out
+*.exe
+*.o
+*.obj
+*.c
+*.cpp
+principal.c
+main.c
+main.cpp
+
+# Pasta de configurações do VS Code
+.vscode/
+
+# Arquivos temporários
+*~
