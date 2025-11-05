@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cadastro de Voluntario </title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de voluntario</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"> inicio</a></li>
+                <li><a href="projeto.html"> projeto de voluntariado</a></li>
+                <li><a href="cadastro.html">Cadastro de voluntario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Formulario de Cadastro de voluntarios</h2>
+            <form>
+                <fieldset>
+                    <legend> Informações Pessoais</legend>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required><br><br>
+
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required><br><br>
+
+                    <label for="disponibilidade">Disponibilidade (dias ):</label>
+                    <select id="disponibilidade" name="disponibilidade"  required>
+                        <option value="">selecione..</option>
+                        <option value="final de semana"> Final de semana</option>
+                        <option value="Dias uteis"> Dias uteis</option>
+                       <option value="Feriado">Feriado</option>
+                       ><option value="Flexivel">Flexiveis</option>
+                    </select>
+
+                
+                </fieldset>
+                <fieldset>
+                    <legend>Informações adicionais:</legend>
+                  <div class="for-group">
+                    <label for="motivação">Porque você quer ser voluntario?</label>
+                    <textarea id="motivação" name="motivação" placeholder="Compartilhe sua motivação..."></textarea> </textarea>
+                  </div>
+                </fieldset>
+                  <button type="submit" class="btn-primary">Enviar cadastro</button>
+            </form>
+            <!--Lista de voluntarios cadastrados---->
+            <section>
+                <h2>Voluntarios Cadastrados</h2>
+                <div id="TabelaVoluntarios">
+                    </div>
+                    <button onclick="limpartabela()">Limpar tabela</button>
+
+        </section>
+
+    </main>
+</body>
+<footer>
+    <p>&copy; 2024 Adote ou Ajude um cãozinho. Todos os direitos reservados.</p>
+    <p>Feito com &#10084;&#65039;</p>
+
+</html>
